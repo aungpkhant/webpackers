@@ -3,6 +3,7 @@ import "./style.css";
 import Icon from "./assets/jw-image.jpg";
 import MyCsv from "./assets/data.csv";
 import MyXml from "./assets/data.xml";
+import printMe from "./print";
 
 function component() {
   const element = document.createElement("div");
@@ -20,6 +21,16 @@ function component() {
   return element;
 }
 
+function component2() {
+  const btn = document.createElement("button");
+  btn.innerHTML = "Click me and check the console!";
+
+  btn.onclick = printMe;
+  return btn;
+}
+
 document.body.appendChild(component());
+document.body.appendChild(component2());
 
 console.log(MyCsv);
+console.log(MyXml);
