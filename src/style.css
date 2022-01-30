@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Comforter";
+  src: url("./assets/fonts/Comforter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .hello {
   color: red;
+  font-family: "Comforter";
+  background: url("./assets/tile.png");
 }
